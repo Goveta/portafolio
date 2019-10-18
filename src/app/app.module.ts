@@ -6,17 +6,25 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { PortafolioComponent } from './componentes/portafolio/portafolio.component';
+import { AbautComponent } from './componentes/abaut/abaut.component';
+import { PitemComponent } from './componentes/pitem/pitem.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './componentes/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    AbautComponent,
+    PitemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
